@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="dark-mode-button">Sötét mód</button>
+    <div class="create-todo">
+        <input type="text" class="make-todo" id="title" name="title" placeholder="Cím">
+        <input type="text" class="make-todo" id="description" name="description" placeholder="Leírás">
+        <button class="make-todo-button">Hozzáadás</button>
+    </div>
+
+    <div class="todos">
+
+    </div>
+
+    <div class="floating-editor">
+        <div class="editor">
+            <h3 class="editor-title"></h3>
+            <input type="text" class="editor-description" name="description" placeholder="Leírás">
+            <button class="editor-save">Mentés</button>
+            <button class="editor-cancel">Mégse</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
