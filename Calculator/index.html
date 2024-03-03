@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="calc-container">
+        <div class="calc-display">
+            <div class="calc-display-value">0</div>
+            <input type="text" name="calc-display" id="calc-display">
+        </div>
+        <div class="calc-buttons">
+            <div class="calc-button-row">
+                <div action="clear" class="calc-button calc-button-clear">C</div>
+                <div action="backspace" class="calc-button calc-button-delete">&lt;X&#124;</div>
+                <div action="write" class="calc-button calc-brace-open">(</div>
+                <div action="write" class="calc-button calc-brace-close">)</div>
+                <div action="calculate" class="calc-button calc-button-equal">=</div>
+            </div>
+            <div class="calc-button-row">
+                <div action="write" class="calc-button calc-button-7">7</div>
+                <div action="write" class="calc-button calc-button-8">8</div>
+                <div action="write" class="calc-button calc-button-9">9</div>
+                <div action="write" class="calc-button calc-button-divide">/</div>
+                <div action="multiply" class="calc-button calc-button-multiply">x</div>
+            </div>
+            <div class="calc-button-row">
+                <div action="write" class="calc-button calc-button-4">4</div>
+                <div action="write" class="calc-button calc-button-5">5</div>
+                <div action="write" class="calc-button calc-button-6">6</div>
+                <div action="write" class="calc-button calc-button-subtract">-</div>
+                <div action="write" class="calc-button calc-button-add">+</div>
+            </div>
+            <div class="calc-button-row">
+                <div action="write" class="calc-button calc-button-1">1</div>
+                <div action="write" class="calc-button calc-button-2">2</div>
+                <div action="write" class="calc-button calc-button-3">3</div>
+                <div action="power" class="calc-button calc-button-power">x<sup>y</sup></div>
+                <div action="root" class="calc-button calc-button-root">√</div>
+            </div>
+            <div class="calc-button-row">
+                <div action="write" class="calc-button calc-button-0">0</div>
+                <div action="write" class="calc-button calc-button-dot">.</div>
+                <div action="write" class="calc-button calc-button-percent">%</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="dark-mode-button">Sötét mód</div>
+        <hr>
+        <p>Beírható billentyűk:</p>
+        <p>&Tab;p / R : x<sup>y</sup></p>
+        <p>&Tab;r / P : √x</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

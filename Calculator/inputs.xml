@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inputs>
+    <input key="Enter" action="calculate"></input>
+    <input key="Backspace" action="backspace"></input>
+    <input key="Escape" action="clear"></input>
+    <input key="p" action="power"></input>
+    <input key="P" action="root"></input>
+    <input key="r" action="root"></input>
+    <input key="R" action="power"></input>
+    <input key="1" action="write">1</input>
+    <input key="2" action="write">2</input>
+    <input key="3" action="write">3</input>
+    <input key="4" action="write">4</input>
+    <input key="5" action="write">5</input>
+    <input key="6" action="write">6</input>
+    <input key="7" action="write">7</input>
+    <input key="8" action="write">8</input>
+    <input key="9" action="write">9</input>
+    <input key="0" action="write">0</input>
+    <input key="." action="write">.</input>
+    <input key="," action="write">.</input>
+    <input key="+" action="write">+</input>
+    <input key="-" action="write">-</input>
+    <input key="*" action="write">*</input>
+    <input key="/" action="write">/</input>
+    <input key="%" action="write">%</input>
+    <input key="(" action="write">(</input>
+    <input key=")" action="write">)</input>
+</inputs>
