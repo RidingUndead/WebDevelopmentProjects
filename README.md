@@ -20,6 +20,19 @@ I hope everyone will like it.
   - The calculator's display can be cleared
   - There is included keyboard input feature made with the XML file. It can be used if the user hosts the project (I used Live Server extension for this)
   - As well as the Todo-list, this includes dark mode too
+- ##### Stopwatch
+  - The user can choose between stopwatch and timer
+  - ###### Stopwatch mode
+    - The stopwatch can be started/paused
+    - Reset option
+    - The user can add lap time
+    - When the stopwatch resets, the laps will be removed
+  - ###### Timer mode
+    - The user can set a timer
+    - When the timer resets, it will be set to the timer the user set
+    - The user can nullify the timer by click on the zero
+  - Changing between stopwatch and timer resets each modes
 
+I know that the projects are not looking really good, but I focused the JavaScript part mode to make the functions working as good as possible.
 
 ### These projects are written in hungarian language, not english

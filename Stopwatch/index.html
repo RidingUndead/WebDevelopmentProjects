@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopperóra</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dark-mode-container">
+        <button class="material-symbols-outlined" id="dark-mode">dark_mode</button>
+    </div>
+    <div class="stopwatch active">
+            <h2 format="stopwatch" class="time">00:00:00:000</h2>
+        <table class="stopwatch__buttons">
+            <tr>
+                <td check="stopwatch" column="1">
+                    <button class="material-symbols-outlined" parent="stopwatch" id="start">play_arrow</button>
+                </td>
+                <td check="stopwatch" column="2">
+                    <button class="material-symbols-outlined" parent="stopwatch" id="reset">restart_alt</button>
+                </td>
+                <td check="stopwatch" column="3">
+                    <button class="material-symbols-outlined" parent="stopwatch" id="laps">list</button>
+                </td>
+                <td check="stopwatch" column="4">
+                    <button class="material-symbols-outlined" parent="stopwatch" id="timer">timer</button>
+                </td>
+            </tr>
+            <tr>
+                <td check="stopwatch" column="1">
+                    <span class="description">Start/pause</span>
+                </td>
+                <td check="stopwatch" column="2">
+                    <span class="description">Reset</span>
+                </td>
+                <td check="stopwatch" column="3">
+                    <span class="description">Laps</span>
+                </td>
+                <td check="stopwatch" column="4">
+                    <span class="description">Timer</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="timer">
+        <h2 format="timer" class="time">00:00:00:000</h2>
+        <table class="inputs">
+            <tr>
+                <td><input type="number" id="hours" name="hours" min="0" max="99" placeholder="00" /></td>
+                <td><input type="number" id="minutes" name="minutes" min="0" max="59" placeholder="00" /></td>
+                <td><input type="number" id="seconds" name="seconds" min="0" max="59" placeholder="00" /></td>
+                <td><input type="number" id="milliseconds" name="milliseconds" min="0" max="99" placeholder="00" /></td>
+            </tr>
+        </table>
+        <table class="buttons">
+            <tr>
+                <td check="timer" column="1">
+                    <button class="material-symbols-outlined" parent="timer" id="start">play_arrow</button>
+                </td>
+                <td check="timer" column="2">
+                    <button class="material-symbols-outlined" parent="timer" id="reset">restart_alt</button>
+                </td>
+                <td check="timer" column="3">
+                    <button parent="timer" id="zero">0</button>
+                </td>
+                <td check="timer" column="4">
+                    <button class="material-symbols-outlined" parent="timer" id="stopwatch">timer</button>
+                </td>
+            </tr>
+            <tr>
+                <td check="timer" column="1">
+                    <span class="description">Start/pause</span>
+                </td>
+                <td check="timer" column="2">
+                    <span class="description">Reset</span>
+                </td>
+                <td check="timer" column="3">
+                    <span class="description">Zero</span>
+                </td>
+                <td check="timer" column="4">
+                    <span class="description">Stopwatch</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="laps">
+        <ul class="laps__list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
